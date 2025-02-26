@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0; 
+    margin: 0;
 }
 
 html, body { 
@@ -461,129 +461,131 @@ footer {
 
 
 @media screen and (max-width: 480px) {
-body {
-    overflow-y: scroll; /* Tente usar scroll para garantir a rolagem, não auto */
-}
+    body {
+        overflow-y: scroll; /* Tente usar scroll para garantir a rolagem, não auto */
+    }
 
-html, body {
-    overflow-x: hidden; /* Impede o overflow horizontal */
-    height: auto; /* Remover altura fixa de 100vh */
-}
+    html, body {
+        overflow-x: hidden; /* Impede o overflow horizontal */
+        height: auto; /* Remover altura fixa de 100vh */
+    }
 
-body {
-    display: flex;
-    flex-direction: column;
-    padding: 0em; /* Ajuste no valor de padding */
-    margin: 0; /* Remove as margens padrão do body */
-    margin-left: 0;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 2px solid #e4fd04;
-}
-
-header img {
-    height: 60px;
-}
-
-header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-header a:hover {
-     transform: translateY(-1px);
-     color: #000000;
-}
-
-.Links {
-     display: flex;
-     justify-content: center;
-     gap: 10px;
-}
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 0em; /* Ajuste no valor de padding */
+        margin: 0; /* Remove as margens padrão do body */
+        margin-left: 0;
+    }
     
-.Links a {
-    text-align: center;
-    display: block;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 1em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 0.5em 1em;
-    background-color: #e4fd04;
-    border-radius: 1em;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid #e4fd04;
+    }
+    
+    header img {
+        height: 60px;
+    }
+    
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header a:hover {
+        transform: translateY(-1px);
+        color: #000000;
+    }
+
+    .Links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .Links a {
+        text-align: center;
+        display: block;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 0.5em 1em;
+        background-color: #e4fd04;
+        border-radius: 1em;
+        transition: background-color 0.3s ease;
+        font-weight: bold;
     }
     
     .Links, ul, li, a {
-    margin: 0;
-    display: flex;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 1em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    gap: 40px;
-}
+        margin: 0;
+        display: flex;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    #loja {
+        display: block;
+        
+    }
+    
+    .sobre-a-loja .container-1 {
+        display: block;
+        align-items: center;
+        margin-top: 3em;
+        height: 550px;
+        justify-content: space-between;
+    }
+    
+    .texto h2 {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 0.8em;
+        font-size: 1.4em;
+    }
+    
+    #loja img {
+        cursor: pointer;
+        height: 22em;
+        margin-left: 1em;
+        transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+    }
+    
+    #loja img:hover {
+        transform: scale(1.05);
+    }
     
 
 
+    .com-que-eu-trabalho{
+        display: block;
+        align-items: center;
+        width: 450px;
+    }
 
 
-/*=============================Tudo sobre inicio======================================*/
 
-#loja {
-    display: block;
+
+
     
-}
+    .com-que-eu-trabalho h1{
+        margin-top: 6em;
+        
+    }
+
+    .com-que-eu-trabalho img{
+        display: none;
+    }
+
     
-.sobre-a-loja .container-1 {
-    display: block;
-    align-items: center;
-    margin-top: 3em;
-    height: 550px;
-    justify-content: space-between;
-}
-    
-.texto h2 {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 0.8em;
-    font-size: 1.4em;
-}
-
-#loja img {
-    cursor: pointer;
-    height: 22em;
-    margin-left: 1em;
-    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
-}
-
-#loja img:hover {
-    transform: scale(1.05);
-}
-
-.com-que-eu-trabalho{
-    display: block;
-    align-items: center;
-    width: 450px;
-}
-
-.com-que-eu-trabalho h1{
-    margin-top: 6em;
-    
-}
-
-.com-que-eu-trabalho img{
-    display: none;
-}
-
 .sobre-a-loja .container-1 p {
     text-align: center;
     color: #fff;               /* Cor do texto */
@@ -594,143 +596,143 @@ header a:hover {
     max-height: 600px;        /* Limita a altura */
 }
 
+
+
 .sobre-a-loja .container-1 h1{
     text-align: center;
     color: #e4fd04;
     font-size: 2em;
     text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */;
 }
+  
+
 
 /*=========================================================================================================*/
+        .texto{
+            align-items: center;
+            text-align: center;
+        }
+
+        .container-habilidades {
+            display: block;
+            justify-content: space-between; /* Faz com que os itens fiquem lado a lado */
+            width: 100%;
+            max-width: 400px;          /* Limita a largura máxima */
+            margin: 0 auto;
+            margin-top: 6em;
+            height: 400px;
+        }
+
+         .sobre-habilidades{
+            text-align: center;
+             max-width: 400px;
+         }
+        
+        .container-habilidades h1 {
+            margin-top: 7em;
+            color: #e4fd04;
+            margin-bottom: 0.8em;
+            font-size: 2em;
+            text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */;
+            text-align: center;
+            margin-left: 0.5em;
+        }
+ 
+        .sobre-habilidades p{
+            text-align: center;
+            font-size: 23px;
+            color: #ffffff;               /* Cor do texto */
+            max-width: 425px;          /* Limita a largura máxima */
+            line-height: 1.5;          /* Espaçamento entre as linhas */
+            font-family: 'Roboto', sans-serif;
+            padding: 0.5em;
+         }
+        
+
+
+         .icones-habilidades {
+            margin-top: 3em;
+            display: flex;           /* Para alinhar os ícones na horizontal */
+            gap: 20px;               /* Espaço entre os ícones */
+            justify-content: center; /* Centraliza os ícones */
+            margin-left: -3em;
+            
+        }
+        
+        .icones{
+            display: flex;
+            align-items: center;
+            ;
+
+        }
+        
+        /* Ícones */
+        .icones-habilidades i {
+            font-size: 40px;   /* Tamanho do ícone */
+            color: yellow;     /* Cor do ícone */
+            cursor: pointer;   /* Cursor de interatividade */
+            transition: transform 0.7s ease-in-out; /* Transição suave */
+            
+        }
+
+
+/*===========================================================================================================================*/
+        .container-projetos img {
+            height: 120px;
+            border-radius: 0.5em;
+            border-bottom: 9px solid #e4fd04; /* Borda inferior da imagem */
+            position: relative; /* Garante que a borda fique acima da camada escura */
+            display: block; /* Remove espaçamentos indesejados */
+            transition: transform 0.5s ease-in-out; /* Transição da imagem */
+            z-index: 1; /* A imagem fica acima da camada escura, mas a borda deve ser visível */
+        }        
+
+        .container-projetos h1{
+            margin-top: 3em;
+        }
+
+        .contato-container h1 {
+            text-align: center;
+            color: #e4fd04;
+            font-size: 3em;
+            text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */
+          
+        }
+
+        .icones-habilidades{
+            align-items: center;
+            margin-left: 1.5em;
+        }
 
 
 
 
+        .iputs input,
+        .iputs textarea {
+            width: 100%; /* Garante que todos os campos ocupem toda a largura disponível */
+            width: 400px;
+            padding: 1em;
+            border-radius: 0.5em;
+            font-size: 1.2em;
+            box-sizing: border-box; /* Evita que o padding aumente o tamanho real do elemento */
+            display: block; /* Garante que os inputs não fiquem lado a lado */
+        }
 
-/*===========================babilidades===============================*/
+
+        .contato-container button {
+            margin-top: 0;
+            width: 100%;
+            width: 400px;
+            padding: 0.8em;
+            background-color: #e4fd04;
+            font-weight: bold;
+            border-radius: 0.5em;
+            cursor: pointer;
+        }
 
 
-.texto{
-    align-items: center;
-    text-align: center;
 }
 
-.container-habilidades {
-    display: block;
-    justify-content: space-between; /* Faz com que os itens fiquem lado a lado */
-    width: 100%;
-    max-width: 400px;          /* Limita a largura máxima */
-    margin: 0 auto;
-    margin-top: 6em;
-    height: 400px;
-}
-.sobre-habilidades{
-    text-align: center;
-    max-width: 400px;
-    }
-
-.container-habilidades h1 {
-    margin-top: 7em;
-    color: #e4fd04;
-    margin-bottom: 0.8em;
-    font-size: 2em;
-    text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */;
-    text-align: center;
-    margin-left: 0.5em;
-}
-
-.sobre-habilidades p{
-    text-align: center;
-    font-size: 23px;
-    color: #ffffff;               /* Cor do texto */
-    max-width: 425px;          /* Limita a largura máxima */
-    line-height: 1.5;          /* Espaçamento entre as linhas */
-    font-family: 'Roboto', sans-serif;
-    padding: 0.5em;
-    }
-
-.icones-habilidades {
-    margin-top: 3em;
-    display: flex;           /* Para alinhar os ícones na horizontal */
-    gap: 20px;               /* Espaço entre os ícones */
-    justify-content: center; /* Centraliza os ícones */
-    margin-left: -3em; 
-}
-
-.icones{
-    display: flex;
-    align-items: center;
-}
-
-/* Ícones */
-.icones-habilidades i {
-    font-size: 40px;   /* Tamanho do ícone */
-    color: yellow;     /* Cor do ícone */
-    cursor: pointer;   /* Cursor de interatividade */
-    transition: transform 0.7s ease-in-out; /* Transição suave */ 
-}
-
-/*=========================================================================================================*/
-
-
-
-
-
-
-
-/*==================================prpjetos================================================*/
-.container-projetos img {
-    height: 120px;
-    border-radius: 0.5em;
-    border-bottom: 9px solid #e4fd04; /* Borda inferior da imagem */
-    position: relative; /* Garante que a borda fique acima da camada escura */
-    display: block; /* Remove espaçamentos indesejados */
-    transition: transform 0.5s ease-in-out; /* Transição da imagem */
-    z-index: 1; /* A imagem fica acima da camada escura, mas a borda deve ser visível */
-}        
-
-.container-projetos h1{
-    margin-top: 3em;
-}
-
-.contato-container h1 {
-    text-align: center;
-    color: #e4fd04;
-    font-size: 3em;
-    text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */
-    
-}
-
-.icones-habilidades{
-    align-items: center;
-    margin-left: 1.5em;
-}
-
-/*====================================contatos=========================================*/
-.iputs input,
-.iputs textarea {
-    width: 100%; /* Garante que todos os campos ocupem toda a largura disponível */
-    width: 400px;
-    padding: 1em;
-    border-radius: 0.5em;
-    font-size: 1.2em;
-    box-sizing: border-box; /* Evita que o padding aumente o tamanho real do elemento */
-    display: block; /* Garante que os inputs não fiquem lado a lado */
-}
-
-.contato-container button {
-    margin-top: 0;
-    width: 100%;
-    width: 400px;
-    padding: 0.8em;
-    background-color: #e4fd04;
-    font-weight: bold;
-    border-radius: 0.5em;
-    cursor: pointer;
-}
-
-}
-/*=========================================================================================================*/
 
 
 
