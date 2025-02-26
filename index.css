@@ -1,0 +1,1057 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body { 
+    min-height: 100vh; /* Mantém o fundo cobrindo toda a tela */
+    width: 100%;
+    background-color: rgb(21, 21, 42);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CONTÊINER PRINCIPAL */
+.container {
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    flex: 1; /* Permite que o conteúdo se expanda */
+    align-items: center;
+}
+
+/* TEXTO */
+.texto {
+    max-width: 600px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+
+/* CABEÇALHO */
+header {
+    align-items: center;
+    border-bottom: 2px solid #e4fd04;
+}
+
+header img {
+    height: 50px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Espaço entre os itens */
+}
+
+/* SOBRE A LOJA */
+.sobre-a-loja .container-1 {
+    display: flex;
+    flex-direction: row; /* Mantém os elementos lado a lado */
+    align-items: center; /* Centraliza os itens na vertical */
+    justify-content: space-between; /* Espaço entre texto e imagem */
+    max-width: 1200px;
+    width: 100%;
+    margin: 3em auto;
+    padding: 20px;
+}
+
+
+.sobre-a-loja .container-1 h1 {
+    color: #e4fd04;
+    font-size: 2em;
+    text-shadow: 0 0 10px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04;
+}
+
+.sobre-a-loja .container-1 p {
+    font-size: 1.2em;
+    color: #fff;  /* Cor do texto */
+    max-width: 800px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* LINKS DO MENU */
+.Links, ul, li, a {
+    margin-right: 9px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    text-align: center;
+    gap: 30px;
+    padding: 0.2em;
+    transition: transform 0.4s ease, color 0.3s ease;
+}
+
+header a:hover {
+    transform: translateY(-7px);
+    color: #eeff00;
+}
+
+/* IMAGEM DA LOJA */
+#loja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loja img {
+    cursor: pointer;
+    height: 33em;
+    margin-left: 1em;
+    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+#loja img:hover {
+    transform: scale(1.05);
+}
+
+/*=============================================================================================*/
+/* Container de habilidades */
+
+
+.sobre-habilidades h1{
+    text-align: center;
+}
+
+.container-habilidades {
+    display: flex;
+    align-items: center; /* Centraliza no eixo vertical */
+    justify-content: space-between; /* Faz com que os itens fiquem lado a lado */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3em;
+    height: 500px;
+}
+
+.container-habilidades h1 {
+    margin-top: 1em;
+    color: #e4fd04;
+    margin-bottom: 0.8em;
+    font-size: 3em;
+    text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */;
+}
+
+.com-que-eu-trabalho{
+    display: flex;
+    align-items: center;
+    width: 1290px;
+}
+
+
+/* Estilo para o parágrafo dentro de .container-habilidades */
+.container-habilidades p {
+    font-size: 30px;
+    color: #fff;               /* Cor do texto */
+    text-align: center;        /* Alinha o texto ao centro */
+    font-size: 1.2em;          /* Tamanho da fonte */
+    margin-top: 0.5em;           /* Espaçamento acima do parágrafo */
+    max-width: 700px;          /* Limita a largura máxima */
+    line-height: 1.5;          /* Espaçamento entre as linhas */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Estilo para os ícones */
+.icones-habilidades {
+    margin-top: 3em;
+    display: flex;           /* Para alinhar os ícones na horizontal */
+    gap: 20px;               /* Espaço entre os ícones */
+    justify-content: center; /* Centraliza os ícones */
+    
+}
+
+.icones{
+    display: block;
+}
+
+/* Ícones */
+.icones-habilidades i {
+    font-size: 50px;   /* Tamanho do ícone */
+    color: yellow;     /* Cor do ícone */
+    cursor: pointer;   /* Cursor de interatividade */
+    transition: transform 0.7s ease-in-out; /* Transição suave */
+}
+
+/* Quando passar o mouse, aumentar o ícone */
+.icones-habilidades i:hover {
+    transform: scale(1.2);  /* Aumenta o ícone em 20% */
+}
+
+
+/*=============================================================================================*/
+
+
+/* =================Tudo sobre os projetos======================== */
+
+
+
+.container-projetos {
+    margin-top: 10em;
+    display: flex; /* Ativa o alinhamento */
+    flex-direction: column; /* Organiza os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    width: 100%; /* Garante que o container ocupa a largura total */
+    text-align: center;
+}
+
+.container-projetos h1 {
+    color: #e4fd04;
+    font-size: 3em;
+    text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */
+    margin-bottom: 1em; /* Espaçamento abaixo do título */
+}
+
+.container-projetos div {
+    width: 100%; /* Define a largura máxima */
+    max-width: 1270px; /* Garante um tamanho adequado */
+    border-radius: 10px; /* Bordas arredondadas */
+
+}
+
+.container-projetos div a {
+    position: relative; /* Necessário para a camada escura */
+    display: inline-block; /* Garante que o link respeite o tamanho da imagem */
+}
+
+
+
+.container-projetos div a {
+    position: relative; /* Necessário para a camada escura ser posicionada corretamente */
+    display: inline-block; /* Garante que o link respeite o tamanho da imagem */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse a área do link */
+}
+
+.container-projetos img {
+    height: 190px;
+    border-radius: 0.5em;
+    border-bottom: 9px solid #e4fd04; /* Borda inferior da imagem */
+    position: relative; /* Garante que a borda fique acima da camada escura */
+    display: block; /* Remove espaçamentos indesejados */
+    transition: transform 0.5s ease-in-out; /* Transição da imagem */
+    z-index: 1; /* A imagem fica acima da camada escura, mas a borda deve ser visível */
+    
+}
+
+/* Efeito de expansão ao passar o mouse */
+.container-projetos div a:hover img {
+    transform: scale(1.04); /* Expande a imagem */
+}
+.container-projetos div a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    background: rgba(0, 0, 0, 0.4); /* Fundo preto com 40% de opacidade */
+    border-radius: 10px; /* Bordas arredondadas */
+    z-index: 1; /* Coloca a camada escura acima da imagem */
+
+}
+.container-projetos div a:hover::after {
+    background: rgba(0, 0, 0, 0.2); /* Diminui um pouco a opacidade da camada escura */
+}
+.segunda-div{
+    margin-top: 0.5em;
+}
+
+
+/* ================================================================================================== */
+
+.Produtoss{
+    display: grid;
+    grid-template-columns: repeat(4, 24.8%) ;
+    column-gap: 1% ;
+}
+
+
+
+
+
+
+
+.contato-container {
+    margin-top: 5em;
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: row; /* Organiza os itens lado a lado */
+    align-items: flex-start; /* Alinha os itens no topo */
+    justify-content: space-between; /* Distribui os itens uniformemente */
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    gap: 40px; /* Espaçamento entre os itens */
+    padding: 150px 1px; /* Adiciona um espaçamento interno */
+}
+
+/* Ajuste para a seção de contato */
+.entre-em-contato {
+    max-width: 800px;
+}
+
+.entre-em-contato p {
+    font-size: 30px;
+    color: #fff;               /* Cor do texto */
+    text-align: center;        /* Alinha o texto ao centro */
+    font-size: 1.2em;          /* Tamanho da fonte */
+    margin-top: 0.5em;           /* Espaçamento acima do parágrafo */
+    max-width: 700px;          /* Limita a largura máxima */
+    line-height: 1.5;          /* Espaçamento entre as linhas */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Configuração para os dois blocos principais ficarem lado a lado */
+.entre-em-contato, .iputs {
+    flex: 1; /* Ambos ocupam o mesmo espaço disponível */
+    width: 100%;
+    min-width: 300px; /* Garante que não fiquem muito pequenos */
+}
+
+/* Melhorando o layout dos ícones de redes sociais */
+.redes-socias {
+    display: flex;
+    gap: 30px; /* Espaçamento entre os ícones */
+    justify-content: center; /* Centraliza os ícones */
+    align-items: center; /* Alinha os ícones verticalmente */
+    margin-top: 20px;
+}
+
+.redes-socias a {
+    cursor: pointer;
+    color: #FFFF00;
+    transition: transform 0.3s ease;
+    font-size: 2.5em; /* Reduzi um pouco para evitar que os ícones fiquem grandes demais */
+}
+
+/* Título */
+.contato-container h1 {
+    text-align: center;
+    color: #e4fd04;
+    font-size: 3em;
+    text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */
+    margin-bottom: 1em; /* Espaçamento abaixo do título */
+}
+
+/* Inputs e Formulário */
+.iputs {
+    width: 100%;
+    max-width: 2000px; /* Ajuste esse valor conforme necessário */
+    margin: 0 auto;
+}
+
+.iputs ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Adiciona espaçamento entre os campos */
+}
+
+/* Configuração dos inputs */
+.iputs input,
+.iputs textarea {
+    width: 100%; /* Garante que todos os campos ocupem toda a largura disponível */
+    width: 500px;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    box-sizing: border-box; /* Evita que o padding aumente o tamanho real do elemento */
+    display: block; /* Garante que os inputs não fiquem lado a lado */
+}
+
+/* Botão */
+.contato-container button {
+    margin-top: 0;
+    width: 100%;
+    width: 500px;
+    padding: 0.8em;
+    background-color: #e4fd04;
+    font-weight: bold;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.contato-container button:hover {
+    background-color: #66690d;
+}
+
+/* Estilos do Footer */
+footer {
+    border-top: 3px solid #FFFF00; /* Borda superior amarela */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+body {
+    overflow-y: scroll; /* Tente usar scroll para garantir a rolagem, não auto */
+}
+
+html, body {
+    overflow-x: hidden; /* Impede o overflow horizontal */
+    height: auto; /* Remover altura fixa de 100vh */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0em; /* Ajuste no valor de padding */
+    margin: 0; /* Remove as margens padrão do body */
+    margin-left: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #e4fd04;
+}
+
+header img {
+    height: 60px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header a:hover {
+     transform: translateY(-1px);
+     color: #000000;
+}
+
+.Links {
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+}
+    
+.Links a {
+    text-align: center;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0.5em 1em;
+    background-color: #e4fd04;
+    border-radius: 1em;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    }
+    
+    .Links, ul, li, a {
+    margin: 0;
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    gap: 40px;
+}
+    
+
+
+
+
+/*=============================Tudo sobre inicio======================================*/
+
+#loja {
+    display: block;
+    
+}
+    
+.sobre-a-loja .container-1 {
+    display: block;
+    align-items: center;
+    margin-top: 3em;
+    height: 550px;
+    justify-content: space-between;
+}
+    
+.texto h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 0.8em;
+    font-size: 1.4em;
+}
+
+#loja img {
+    cursor: pointer;
+    height: 22em;
+    margin-left: 1em;
+    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+#loja img:hover {
+    transform: scale(1.05);
+}
+
+.com-que-eu-trabalho{
+    display: block;
+    align-items: center;
+    width: 450px;
+}
+
+.com-que-eu-trabalho h1{
+    margin-top: 6em;
+    
+}
+
+.com-que-eu-trabalho img{
+    display: none;
+}
+
+.sobre-a-loja .container-1 p {
+    text-align: center;
+    color: #fff;               /* Cor do texto */
+    font-size: 1.2em;          /* Tamanho da fonte */
+    max-width: 400px;          /* Limita a largura máxima */
+    line-height: 1.5;          /* Espaçamento entre as linhas */
+    font-family: 'Roboto', sans-serif;
+    max-height: 600px;        /* Limita a altura */
+}
+
+.sobre-a-loja .container-1 h1{
+    text-align: center;
+    color: #e4fd04;
+    font-size: 2em;
+    text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */;
+}
+
+/*=========================================================================================================*/
+
+
+
+
+
+/*===========================babilidades===============================*/
+
+
+.texto{
+    align-items: center;
+    text-align: center;
+}
+
+.container-habilidades {
+    display: block;
+    justify-content: space-between; /* Faz com que os itens fiquem lado a lado */
+    width: 100%;
+    max-width: 400px;          /* Limita a largura máxima */
+    margin: 0 auto;
+    margin-top: 6em;
+    height: 400px;
+}
+.sobre-habilidades{
+    text-align: center;
+    max-width: 400px;
+    }
+
+.container-habilidades h1 {
+    margin-top: 7em;
+    color: #e4fd04;
+    margin-bottom: 0.8em;
+    font-size: 2em;
+    text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */;
+    text-align: center;
+    margin-left: 0.5em;
+}
+
+.sobre-habilidades p{
+    text-align: center;
+    font-size: 23px;
+    color: #ffffff;               /* Cor do texto */
+    max-width: 425px;          /* Limita a largura máxima */
+    line-height: 1.5;          /* Espaçamento entre as linhas */
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5em;
+    }
+
+.icones-habilidades {
+    margin-top: 3em;
+    display: flex;           /* Para alinhar os ícones na horizontal */
+    gap: 20px;               /* Espaço entre os ícones */
+    justify-content: center; /* Centraliza os ícones */
+    margin-left: -3em; 
+}
+
+.icones{
+    display: flex;
+    align-items: center;
+}
+
+/* Ícones */
+.icones-habilidades i {
+    font-size: 40px;   /* Tamanho do ícone */
+    color: yellow;     /* Cor do ícone */
+    cursor: pointer;   /* Cursor de interatividade */
+    transition: transform 0.7s ease-in-out; /* Transição suave */ 
+}
+
+/*=========================================================================================================*/
+
+
+
+
+
+
+
+/*==================================prpjetos================================================*/
+.container-projetos img {
+    height: 120px;
+    border-radius: 0.5em;
+    border-bottom: 9px solid #e4fd04; /* Borda inferior da imagem */
+    position: relative; /* Garante que a borda fique acima da camada escura */
+    display: block; /* Remove espaçamentos indesejados */
+    transition: transform 0.5s ease-in-out; /* Transição da imagem */
+    z-index: 1; /* A imagem fica acima da camada escura, mas a borda deve ser visível */
+}        
+
+.container-projetos h1{
+    margin-top: 3em;
+}
+
+.contato-container h1 {
+    text-align: center;
+    color: #e4fd04;
+    font-size: 3em;
+    text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */
+    
+}
+
+.icones-habilidades{
+    align-items: center;
+    margin-left: 1.5em;
+}
+
+/*====================================contatos=========================================*/
+.iputs input,
+.iputs textarea {
+    width: 100%; /* Garante que todos os campos ocupem toda a largura disponível */
+    width: 400px;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    box-sizing: border-box; /* Evita que o padding aumente o tamanho real do elemento */
+    display: block; /* Garante que os inputs não fiquem lado a lado */
+}
+
+.contato-container button {
+    margin-top: 0;
+    width: 100%;
+    width: 400px;
+    padding: 0.8em;
+    background-color: #e4fd04;
+    font-weight: bold;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+}
+/*=========================================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen  and ( min-width: 641px) and  (max-width: 1023px ){
+
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+        border-bottom: 2px solid #e4fd04;
+        width: 100%;
+    }
+    
+    header img {
+        height: 60px;
+  
+    }
+    
+    header .container {
+        display: flex;
+        flex-direction: column; /* Empilha os itens na coluna */
+        align-items: center;
+        text-align: center;
+    }
+    
+    .Links {
+        display: flex;
+        justify-content: center; /* Centraliza os links */
+        gap: 10px;
+    }
+    
+    .Links a {
+        text-align: center;
+        display: block;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 1.5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 0.5em 1em;
+        background-color: #e4fd04;
+        border-radius: 1em;
+        transition: background-color 0.3s ease;
+        font-weight: bold;
+    }
+    
+    .Links, ul, li, a {
+        margin: 0; /* Remover margens conflitantes */
+        display: flex;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        gap: 40px;
+      
+    }
+
+    #loja {
+        margin-top: 3em;
+        display: block;
+        height: 400px;
+    }
+
+    .sobre-a-loja .container-1 {
+        display: block;
+        align-items: center;
+        margin-top: 3em;
+        height: 550px;  
+        justify-content: space-between;
+    }
+
+
+    .texto h2{
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 0.8em;
+        font-size: 2em;
+    }
+
+    #loja img{
+        align-items: center;
+        cursor: pointer;
+        height: 24em;
+        margin-left: 4em;
+        transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+    }
+
+    #loja img:hover {
+        transform: scale(1.05);
+    }
+
+
+    .com-que-eu-trabalho{
+        display: block;
+        align-items: center;
+        width: 1290px;
+    }
+    
+    .com-que-eu-trabalho h1{
+        margin-top: 6em;
+        
+    }
+
+    .com-que-eu-trabalho img{
+        display: none;
+    }
+
+    
+.sobre-a-loja .container-1 p {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;               /* Cor do texto */
+    font-size: 1.2em;          /* Tamanho da fonte */
+    max-width: 800px;          /* Limita a largura máxima */
+    line-height: 1.5;          /* Espaçamento entre as linhas */
+    font-family: 'Roboto', sans-serif;
+   max-height: 400px;;
+}
+
+
+
+
+.sobre-a-loja .container-1 h1{
+    text-align: center;
+    color: #e4fd04;
+    font-size: 2em;
+    text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */;
+}
+  
+
+
+/*=========================================================================================================*/
+
+
+#loja {
+ display: flex;
+}
+
+.container-habilidades {
+    display: block;
+    justify-content: space-between; /* Faz com que os itens fiquem lado a lado */
+    width: 100%;
+    max-width: 1000px;          /* Limita a largura máxima */
+    margin: 0 auto;
+    margin-top: 6em;
+    height: 400px;
+    text-align: center;
+ text-align: center;
+}
+
+
+.container-habilidades .com-que-eu-trabalho  p {
+    font-size: 30px;
+    color: #fff;               /* Cor do texto */
+    text-align: center;        /* Alinha o texto ao centro */
+    font-size: 1.2em;          /* Tamanho da fonte */
+    margin-top: 0.5em;           /* Espaçamento acima do parágrafo */
+    max-width: 800px;          /* Limita a largura máxima */
+    line-height: 1.5;          /* Espaçamento entre as linhas */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+         .sobre-habilidades{
+            text-align: center;
+            margin-left: 10em;
+         }
+        
+
+
+        .container-habilidades h1 {
+            margin-top: 1em;
+            color: #e4fd04;
+            margin-bottom: 0.8em;
+            font-size: 2em;
+            text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */;
+            text-align: center;
+            margin-left: 0.5em;
+        }
+ 
+        
+        .com-que-eu-trabalho{
+            display: block;
+            width: 800px;
+     
+        }
+
+
+
+
+
+
+
+/*===========================================================================================================================*/
+        .container-projetos img {
+            height: 150px;
+            border-radius: 0.5em;
+            border-bottom: 9px solid #e4fd04; /* Borda inferior da imagem */
+            position: relative; /* Garante que a borda fique acima da camada escura */
+            display: block; /* Remove espaçamentos indesejados */
+            transition: transform 0.5s ease-in-out; /* Transição da imagem */
+            z-index: 1; /* A imagem fica acima da camada escura, mas a borda deve ser visível */
+        }        
+
+        .container-projetos h1{
+            margin-top: 0em;
+        }
+
+        .contato-container h1 {
+            text-align: center;
+            color: #e4fd04;
+            font-size: 3em;
+            text-shadow: 0 0 0px #e4fd04, 0 0 20px #e4fd04, 0 0 30px #e4fd04; /* Efeito de brilho */
+          
+        }
+
+        .icones-habilidades{
+            align-items: center;
+            margin-left: 1.5em;
+        }
+
+
+
+
+
+
+}
+
+
